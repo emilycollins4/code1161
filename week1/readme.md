@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week I've learned the use of Anaconda, GitHub and Python. I now know how to generally use all of the sites relevant to CODE1161 to find information on homework and assessment tasks. I've learned how to debug, enter lab books and I have completed my first exercise; However I'm still not 100% sure on what the terms push and pull mean. 
