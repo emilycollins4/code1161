@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+There was a lot of new content this week; We learned about values, variables, expressions, functions, collections, flow control, iteration, and how to implement all of them into python. I know how to analyse and fix basic texts and create lists. I am still struggling with the idea of lists, nested lists and loops. I understand if and else functions but had a lot of trouble finding imformation on some of the questions. 
