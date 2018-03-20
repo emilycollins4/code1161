@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week we learned about while loops and how to create games and guessing games. I am still unsure on how to do this as I dont understand how to set up my codes. 
