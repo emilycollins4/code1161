@@ -59,6 +59,19 @@ def stubborn_asker(low, high):
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
+    keep_asking = True 
+    while keep_asking == True
+        Vn = None 
+        Vstr = input("give me a number between" + str(low) + "and" + str(high) + " :")
+        try:
+            Vn = float(Vstr)
+            if Vn = >= low and Vn <= high:
+                keep_asking = False
+            else: 
+                keep_asking = True
+        except:
+            keep_asking = True
+    return "correct"
     
 
 
@@ -69,7 +82,16 @@ def not_number_rejector(message):
     "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    pass
+    keep_asking = True
+    while keep_asking == True
+        Vn = None 
+        Vstr = input("give a number:")
+        try:
+            Vn = float(Vstr)
+            keep_asking = False
+        except:
+            keep_asking = True
+    return "correct"
 
 
 def super_asker(low, high):
@@ -78,7 +100,20 @@ def super_asker(low, high):
     Combine stubborn_asker and not_number_rejector to make a function
     that does it all!
     """
-    pass
+    keep_asking = True
+    while keep_asking = True:
+        Vn = None
+        Vstr = input("give a number between" + str(low) + "and" + str(high) + " :")
+        try:
+            Vn = float(Vstr)
+            if Vn >= low and Vn <= high:
+                keep_asking = False
+            else:
+                keep_asking = True
+        except:
+            keep_asking = True
+
+    return str(Vn) + ": is correct"
 
 
 if __name__ == "__main__":

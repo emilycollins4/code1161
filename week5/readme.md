@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+We continued to use loops and did a refactoring exercise. I understood what the questions were asking and how I could possibly answer them, however I was unable to put it into code.
