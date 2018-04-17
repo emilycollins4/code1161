@@ -17,7 +17,7 @@ def greet(name="Towering Timmy"):
     return a string of "Hello" and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    pass
+    return("Hello "+name)
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
@@ -26,7 +26,7 @@ def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 5
     """
-    pass
+pass
 
 
 def fizz_buzz():
@@ -44,7 +44,15 @@ def fizz_buzz():
     if it is. E.g. [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, ...]
     """
     fizzBuzzList = []
-    # your code here
+    for i in range(1, 101):
+        if i % 5 == 0 and i % 3 == 0:
+            fizzBuzzList.append("FizzBuzz")
+        elif i % 3 == 0:
+            fizzBuzzList.append("Fizz")
+        elif i % 5 == 0:
+            fizzBuzzList.append("Buzz")
+        else:
+            fizzBuzzList.append(i)        
     return fizzBuzzList
 
 
@@ -57,7 +65,9 @@ def put_behind_bars(input_string="very naughty boy"):
     TIP: conside using the 'join' method in Python.
     TIP: make sure that you have a pipe on both ends of the string.
     """
-    pass
+    pipe = "|" 
+    return ("|" + pipe.join(input_string) + "|")
+
 
 
 def pet_filter(letter="a"):
@@ -70,8 +80,15 @@ def pet_filter(letter="a"):
             "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi",
             "canary", "society finch", "fancy mouse", "siamese fighting fish",
             "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"]
-    pass
-
+    
+    a_list = []
+    for line in pets:
+        for letter in letter:
+            if letter not in line:
+                break 
+        else: 
+            a_list.append(line)
+    return a_list
 
 def best_letter_for_pets():
     """Return the letter that is present at least once in the most pet names.
@@ -81,7 +98,8 @@ def best_letter_for_pets():
     """
     import string
     the_alphabet = string.ascii_lowercase
-    pass
+    letterFinder = [i for i in pet_filter if the_alphabet in i]
+    return letterfilter
 
 
 def make_filler_text_dictionary():
@@ -113,7 +131,13 @@ def make_filler_text_dictionary():
     """
     
     import requests
-    return
+  
+    r = requests.get(url)
+    response_json = json.loads(r.text)
+    return response_json[0]['word']
+    
+    return word_dictionary
+    pass
 
 
 def random_filler_text(number_of_words=200):
@@ -127,8 +151,8 @@ def random_filler_text(number_of_words=200):
     TIP: you'll need the random library, 
         see line 77 of week4/hangman_leadboard.py for an example.
     """
-    import random
-    pass
+    
+    
 
 
 def fast_filler(number_of_words=200):
